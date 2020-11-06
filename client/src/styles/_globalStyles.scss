@@ -1,0 +1,27 @@
+.button {
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(27, 26, 26);
+    font-weight: bold;
+    transition: all 0.4s ease-out;
+    line-height: 26px;
+
+    &:hover {
+        background-color: rgb(27, 26, 26);
+        color: white;
+    }
+}
+
+.input-box {
+    line-height: 26px;
+}
+
+.heading {
+    margin-bottom: 3rem;
+    
+}
+
+.error {
+    color: rgb(206, 64, 64);
+    font-size: small;
+}

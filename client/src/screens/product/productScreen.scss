@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+
+    & .grid {
+        list-style: none;
+    }
+
+    & input {
+        width: 35px;
+        text-align: center;
+        border: 2px solid rgb(27, 26, 26);
+        padding: 2px 0;
+        // margin-left: 3px;
+        // margin-right: 3px;
+    }
+}

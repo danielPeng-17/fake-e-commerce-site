@@ -15,12 +15,12 @@ interface productDetails {
 }
 
 const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 400,
-  },
+    root: {
+        maxWidth: 345,
+    },
+    media: {
+        height: 400,
+    },
 });
 
 function ProductCard(props: productDetails) {

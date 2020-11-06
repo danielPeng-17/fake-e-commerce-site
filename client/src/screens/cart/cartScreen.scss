@@ -1,0 +1,14 @@
+.container {
+    display: block;
+
+    & .align-left {
+        float: left;
+        width: 60%;
+    }
+
+    & .align-right {
+        float: right;
+        margin-left: auto;
+        width: 40%;
+    }
+}

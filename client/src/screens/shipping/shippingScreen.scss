@@ -1,0 +1,20 @@
+@import "../../styles/globalStyles.scss";
+
+.container {
+    & .inputBox {
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        text-align: left;
+        padding: 5px;
+        display: block;
+    }
+
+    & .submitBtn {
+        @extend .button;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -2,7 +2,7 @@ export const data = {
     products: [
         {
             _id: '1',
-            name: 'Iphone 11 pro max',
+            name: 'Iphone 11 Pro Max',
             category: 'phone',
             image: "/assets/images/iphone-11-pro-max.jpg",
             brand: 'apple',
@@ -11,7 +11,7 @@ export const data = {
         },
         {
             _id: '2',
-            name: 'Samsung galaxy note 20',
+            name: 'Samsung Galaxy Note 20',
             category: 'phone',
             image: "/assets/images/samsung-note-20.jpg",
             brand: 'samsung',
@@ -20,7 +20,7 @@ export const data = {
         },
         {
             _id: '3',
-            name: 'Oneplus 8 pro',
+            name: 'Oneplus 8 Pro',
             category: 'phone',
             image: "/assets/images/oneplus-8-pro.jpg",
             brand: 'oneplus',

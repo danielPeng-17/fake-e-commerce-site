@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { useSelector } from 'react-redux';
 import { Link, RouteProps } from 'react-router-dom';
 import './nav.scss';
 
@@ -7,7 +8,23 @@ interface NavProps {
     children: RouteProps["children"];
 }
 
+interface RootState {
+    userSignin: {
+        userInfo?: {
+            name: string;
+            email: string;
+            isAdmin: boolean;
+            token: string;
+        }
+    }
+}
+{
+
+}
 function Nav(props: NavProps) {
+    const userSignin = useSelector((root: RootState) => root.userSignin);
+    const { userInfo } = userSignin;
+
     const path = props.location!.pathname;
 
     console.log(props.location!.pathname);
@@ -20,7 +37,13 @@ function Nav(props: NavProps) {
                 <ul className="nav-links" >
                     <Link className={"nav-link " + (path === "/" ? "fill" : "")} to="/" >Home</Link>
                     <Link className={"nav-link " + (path === "/cart" ? "fill" : "")} to="/cart" >Cart</Link>
-                    <Link className={"nav-link " + (path === "/signin" ? "fill" : "")} to="/signin">Sign-in</Link>
+                    {
+                        userInfo ?
+                            <Link className={"nav-link " + (path === "/profile" ? "fill" : "")} to="/profile">{userInfo.name}</Link>
+                        :
+                            <Link className={"nav-link " + (path === "/signin" ? "fill" : "")} to="/signin">Sign-in</Link>
+                    }
+                    
                 </ul>
             </div>
             <div className="disclaimer" >

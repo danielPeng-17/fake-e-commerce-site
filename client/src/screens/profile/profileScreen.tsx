@@ -4,7 +4,6 @@ function ProfileScreen() {
     return (
         <div>
             <h3>Hello</h3>
-            <p>testing</p>
         </div>
     );
 }

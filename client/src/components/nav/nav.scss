@@ -26,16 +26,16 @@
         text-align: center;
         line-height: 20px; 
     
-        &.fill {
-            border-radius: 50px;
-            background-color: lightcoral;
-            transition: background-color ease-out 1s;
-            color: rgb(44, 179, 224);
-        }
+        // &.fill {
+        //     border-radius: 50px;
+        //     background-color: rgb(201, 201, 201);
+        //     transition: background-color ease-out 1s;
+        //     color: black;
+        // }
     
-        &:hover {
-            color: rgb(44, 179, 224);
-        }
+        // &:hover {
+        //     color: rgb(224, 213, 213);
+        // }
     }
 }
 
